@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Cases Assigned to you" icon-name="standard:entity_milestone">
+        <div style="height: 300px;">
+            <lightning-datatable key-field="id" show-row-number-column row-number-offset={rowOffset}
+                hide-checkbox-column columns={columns} data={data}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,27 @@
+<aura:component implements="lightning:homeTemplate" description="Custom Two-Column Layout">
+
+    <aura:attribute name="header" type="Aura.Component[]" />
+	<aura:attribute name="middle_col" type="Aura.Component[]" />
+    <aura:attribute name="left_col" type="Aura.Component[]" />
+
+    <aura:attribute name="right_col" type="Aura.Component[]" />
+
+
+    <div>
+        <lightning:layout>
+            <lightning:layoutItem size="7" class="">
+                {!v.header}
+            </lightning:layoutItem>
+            <lightning:layoutItem size="5" class="">
+                {!v.right_col}
+            </lightning:layoutItem>
+        </lightning:layout>
+
+        <lightning:layout>
+            <lightning:layoutItem size="7" class="">
+                {!v.left_col}
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+
+</aura:component>
